@@ -1,0 +1,107 @@
+<!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Basic HTML</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <style>
+        p {
+            color: #333;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
+        #quote {
+            color: magenta;
+            font-style: italic;
+            border: solid lightskyblue 2px;
+        }
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #longest {
+            width: 300px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #longer {
+            width: 200px; /* Shorter than #longest */
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #long {
+            width: 100px; /* Shortest */
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dos a Cero!</h1>
+    
+    <h2>My intro</h2>
+    <p>My name is <strong>Alex</strong>, and I am from <i>Chicago</i>.</p>
+    
+    <h2>My handles</h2>
+    <p>This is an <a href="https://www.meninred97.com" target="_blank">MIR97 Media</a> link. (my website)</p>
+
+    <h2>My favorite meme</h2>
+    <img src="hay-niveles.png" alt="hay niveles" width="300">
+
+    <h2>Why I'm a great student</h2>
+    <ul>
+        <li>I am typically active in class and participate in activities.</li>
+        <li>I also like to engage in discussions with my fellow students.</li>
+    </ul>
+
+    <h2>Top 3 most famous people from my hometown</h2>
+    <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Kanye_West" target="_blank">Kanye West</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Walt_Disney" target="_blank">Walt Disney</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Harrison_Ford" target="_blank">Harrison Ford</a></li>
+    </ol>
+
+    <h2>~ Challenge: Read my poetry (i wrote a haiku)~</h2>
+    <p>I am in college <br> I enjoy it very much <br> I will graduate</p>
+
+    <h2>This is one of my favorite quotes</h2>
+    <h3>The Great Gatsby</h3>
+    <p id="quote">“So we beat on, boats against the current, borne back ceaselessly into the past.”</p>
+
+    <h2>These are more of my favorite books</h2>
+    <ul>
+        <li class="book">The Great Gatsby</li>
+        <li class="book">Harry Potter and the Half-Blood Prince</li>
+        <li class="book">To Kill A Mockingbird</li>
+    </ul>
+
+    <h2>Here's how I normally spend my weekend</h2>
+    <!-- Provided iframe for the Datawrapper chart -->
+    <iframe title="Time spent" aria-label="Pie Chart" id="datawrapper-chart-wi4ue" src="https://datawrapper.dwcdn.net/wi4ue/1/" scrolling="no" frameborder="0" style="width: 300px; border: none;" height="361" data-external="1"></iframe>
+>
+    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <div id="bargraph">
+        <h4>Length of bars</h4>
+        <p class="bar_label">Longest</p>
+        <div id="longest"></div>
+        <p class="bar_label">Longer</p>
+        <div id="longer"></div>
+        <p class="bar_label">Long</p>
+        <div id="long"></div>
+    </div>
+ 
+</body>
+</html>
